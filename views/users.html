@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3><a href="/user/add">Add User</a></h3>
+    <hr>
+    {% for user in users %}
+    <p>Name: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Address: {{ user.address }}</p>
+    <p>Phone: {{ user.phone }}</p>
+    <p>Contacts: </p>
+    <ul>
+    {% for contact in user.userContacts %}
+        <li>{{ contact.email }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/user/delete/{{ user._id }}">Delete User</a>
+    <hr>
+    {% endfor %}
+{% endblock %}
