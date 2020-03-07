@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="/user/add" method="POST">
+        <label for="name">Name: </label><br>
+        <input name="name" type="text" required>
+        <br><br>
+        <label for="email">Email: </label><br>
+        <input name="email" type="email" required>
+        <br><br>
+        <label for="password">Password: </label><br>
+        <input name="password" type="password" required>
+        <br><br>
+        <label for="address">Address: </label><br>
+        <input name="address" type="text" required>
+        <br><br>
+        <label for="phone">Phone No: </label><br>
+        <input name="phone" type="number" required>
+        <br><br>
+        <label for="dob">Date of Birth: </label><br>
+        <input name="dob" type="date">
+        <br><br>
+        <input type="submit" value="Submit" required>
+    </form>
+    <br>
+    <hr>
+    <h3><a href="/users">Users</a></h3>
+{% endblock %}
