@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Prime Numbers upto {{ n }} are: </h1>
+    <h2>
+        {% for i in arr %}
+            {{ i }} 
+        {% endfor %}
+    </h2>
+{% endblock %}
