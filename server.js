@@ -126,6 +126,6 @@ app.get('/user/delete/:id', (req, res) => {
     res.send('user deleted successfully')
 })
 
-app.listen(80, () => {
+app.listen(process.env.PORT, () => {
     console.log('Listening on Port 80')
 })
