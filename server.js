@@ -126,6 +126,6 @@ app.get('/user/delete/:id', (req, res) => {
     res.send('user deleted successfully')
 })
 
-app.listen(3000, () => {
-    console.log('Listening on Port 3000')
+app.listen(80, () => {
+    console.log('Listening on Port 80')
 })
