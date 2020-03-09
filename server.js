@@ -29,7 +29,7 @@ app.get('/prime/:n', (req, res) => {
     var n = parseInt(req.params.n)
     for(var i = 2; i < n + 1; i++) {
         var f = 0
-        for(var j = 2; j < Math.sqrt(i); j++) {
+        for(var j = 2; j < i; j++) {
             if (i % j == 0){
                 f = 1
                 break
